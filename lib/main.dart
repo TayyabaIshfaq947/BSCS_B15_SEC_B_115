@@ -12,35 +12,11 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
     //Multi-Child Widget
           child: Column(
-            //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
-              Container(
-                color: Colors.red,
-                height: 100.0,
-                width: 100.0,
-                child: Text('Tayyaba'),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Container(
-                color: Colors.amber,
-                height: 100.0,
-                width: 100.0,
-                child: Text('Tayyaba'),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Container(
-                color: Colors.blueAccent,
-                height: 100.0,
-                width: 100.0,
-                child: Text('Tayyaba'),
-              ),
-              Container(
-                width: double.infinity,
+        //For pasting image
+              CircleAvatar(
+                backgroundImage: AssetImage('Images/tayyaba.png'),
+                radius: 80.0,
               ),
                Container(
                 color: Colors.white,
