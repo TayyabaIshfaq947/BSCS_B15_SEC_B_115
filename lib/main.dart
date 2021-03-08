@@ -8,8 +8,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.greenAccent,
-        body: Container(),
-      ),
+   //Single Child Container widget
+        body: SafeArea(
+          child: Container(
+            color: Colors.red,
+            height: 200.0,
+            width: 200.0,
+            margin: EdgeInsets.all(60.0),
+            padding: EdgeInsets.all(20.0),
+            child: Text('Tayyaba'),
+          ),
+        ),
     );
   }
 }
