@@ -10,13 +10,39 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.greenAccent,
    //Single Child Container widget
         body: SafeArea(
-          child: Container(
-            color: Colors.red,
-            height: 200.0,
-            width: 200.0,
-            margin: EdgeInsets.all(60.0),
-            padding: EdgeInsets.all(20.0),
-            child: Text('Tayyaba'),
+    //Multi-Child Widget
+          child: Column(
+            //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: <Widget>[
+              Container(
+                color: Colors.red,
+                height: 100.0,
+                width: 100.0,
+                child: Text('Tayyaba'),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                color: Colors.amber,
+                height: 100.0,
+                width: 100.0,
+                child: Text('Tayyaba'),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                color: Colors.blueAccent,
+                height: 100.0,
+                width: 100.0,
+                child: Text('Tayyaba'),
+              ),
+              Container(
+                width: double.infinity,
+              ),
+            ],
           ),
         ),
     );
