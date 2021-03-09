@@ -18,6 +18,24 @@ class MyApp extends StatelessWidget {
                 backgroundImage: AssetImage('Images/tayyaba.png'),
                 radius: 80.0,
               ),
+              Text(
+                'Tayyaba Ishfaq',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 40.0,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+              Text(
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.normal),
+              ),
                Container(
                 color: Colors.white,
                 padding: EdgeInsets.all(13.0),
