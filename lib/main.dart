@@ -12,10 +12,12 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
     //Multi-Child Widget
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
         //For pasting image
               CircleAvatar(
                 backgroundImage: AssetImage('Images/tayyaba.png'),
+                backgroundColor: Colors.white,
                 radius: 80.0,
               ),
               Text(
@@ -36,48 +38,46 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontStyle: FontStyle.normal),
               ),
-               Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(13.0),
-                margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 26.0),
-            //Row widegt
-                 child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.greenAccent,
-                      size: 30.0,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+923007721118',
-                      style: TextStyle(
-                          fontSize: 20.0, fontWeight: FontWeight.bold),
-                    ),
-                  ],
+              SizedBox(
+                width: 280.0,
+                height: 20.0,
+                child: Divider(
+                  color: Colors.pink,
+                  thickness: 2.0,
                 ),
               ),
-              Container(
+                  Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(13.0),
                 margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 26.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.greenAccent,
-                      size: 30.0,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'taibatahira84@gmail.com',
-                      style: TextStyle(
-                          fontSize: 20.0, fontWeight: FontWeight.bold),
-                    ),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.greenAccent,
+                    size: 30.0,
+                  ),
+                  title: Text(
+                    '+923007721118',
+                    style:
+                        TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 26.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.greenAccent,
+                    size: 30.0,
+                  ),
+                  title: Text(
+                    'taibatahira84@gmail.com',
+                    style:
+                        TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              )
                   ],
                 ),
               ),
