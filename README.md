@@ -1,4 +1,4 @@
-# loginapp
+# sidebarapp
 
 A new Flutter application.
 
